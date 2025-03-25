@@ -29,25 +29,15 @@
             </Label>
             <Button fx:id="displayAllGrades" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" onAction="#displayAllGrades" prefHeight="25.0" prefWidth="149.0" text="Display All Grades" />
             <Button fx:id="findStudentId" layoutX="14.0" layoutY="169.0" mnemonicParsing="false" onAction="#findStudentId" prefHeight="25.0" prefWidth="149.0" text="Find Student Id" />
-            <Button fx:id="resultsInMarkRange" layoutX="14.0" layoutY="215.0" mnemonicParsing="false" onAction="#resultsInMarkRange" prefHeight="25.0" prefWidth="149.0" text="Results in Mark Range" />
-            <Button fx:id="displayStatistics" layoutX="14.0" layoutY="317.0" mnemonicParsing="false" onAction="#displayStatistics" prefHeight="25.0" prefWidth="149.0" text="Display Statistics" />
-            <TextField fx:id="findStudentsIdTextArea" layoutX="198.0" layoutY="169.0" />
-            <TextField fx:id="resultsInMarkRangeFromTextArea" layoutX="14.0" layoutY="265.0" />
-            <TextField fx:id="resultsInMarkRangeToTextArea" layoutX="198.0" layoutY="265.0" />
-            <Label layoutX="14.0" layoutY="240.0" prefHeight="25.0" prefWidth="103.0" text="From:">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="199.0" layoutY="240.0" prefHeight="25.0" prefWidth="103.0" text="To:">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
+            <Button fx:id="resultsInMarkRange" layoutX="14.0" layoutY="225.0" mnemonicParsing="false" onAction="#resultsInMarkRange" prefHeight="25.0" prefWidth="149.0" text="Results in Mark Range" />
+            <Button fx:id="displayStatistics" layoutX="14.0" layoutY="319.0" mnemonicParsing="false" onAction="#displayStatistics" prefHeight="25.0" prefWidth="149.0" text="Display Statistics" />
+            <TextField fx:id="findStudentsIdTextArea" layoutX="171.0" layoutY="169.0" promptText="Student Id" />
+            <TextField fx:id="resultsInMarkRangeFromTextArea" layoutX="14.0" layoutY="267.0" promptText="From" />
+            <TextField fx:id="resultsInMarkRangeToTextArea" layoutX="171.0" layoutY="267.0" promptText="To" />
             <Button fx:id="clearButton" layoutX="14.0" layoutY="397.0" mnemonicParsing="false" onAction="#clearButton" prefHeight="25.0" prefWidth="149.0" text="Clear" />
             <Button fx:id="exitButton" layoutX="641.0" layoutY="401.0" mnemonicParsing="false" onAction="#exitButtonClick" prefHeight="25.0" prefWidth="149.0" text="Exit" />
             <Separator layoutX="373.0" layoutY="7.0" orientation="VERTICAL" prefHeight="422.0" prefWidth="16.0" />
-            <TextArea fx:id="outputTextArea" layoutX="396.0" layoutY="120.0" prefHeight="259.0" prefWidth="409.0" />
+            <TextArea fx:id="outputTextArea" layoutX="396.0" layoutY="120.0" prefHeight="259.0" prefWidth="409.0" promptText="Results" />
          </children>
       </AnchorPane>
    </children>
