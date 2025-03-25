@@ -1,3 +1,7 @@
-com\mycompany\studentgradesystem\IExitable.class
+com\mycompany\studentgradesystem\Controller.class
+com\mycompany\studentgradesystem\GradeAllocator.class
 com\mycompany\studentgradesystem\App.class
-com\mycompany\studentgradesystem\PrimaryController.class
+com\mycompany\studentgradesystem\GradeAnalyser.class
+com\mycompany\studentgradesystem\DataSet.class
+com\mycompany\studentgradesystem\EmptyListException.class
+com\mycompany\studentgradesystem\Student.class

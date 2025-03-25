@@ -1,11 +1,14 @@
 package com.mycompany.studentgradesystem;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-public class PrimaryController implements IExitable{
+public class Controller{
 
     // Primary Controller Code
     @FXML
@@ -72,6 +75,11 @@ public class PrimaryController implements IExitable{
     
     @FXML
     private void exitButtonClick(ActionEvent event){
-        this.exitClick(); 
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure you want to Exit?");
+        alert.showAndWait().ifPresent(response -> {
+            if (response == ButtonType.OK) {
+              Platform.exit();
+            }
+        }); 
     }  
 }
